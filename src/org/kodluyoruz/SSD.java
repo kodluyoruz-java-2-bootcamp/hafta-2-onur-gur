@@ -27,7 +27,7 @@ public class SSD extends  Hardware
 
         if (getMemory()>750) {
             int remain = (getMemory()-750)/250;
-            amount += amount+(270*remain);
+            amount +=(270*remain);
         }
 
         return  amount;

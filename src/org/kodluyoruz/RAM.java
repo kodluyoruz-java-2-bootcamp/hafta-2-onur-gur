@@ -42,7 +42,7 @@ public class RAM extends  Hardware
 
         if (getFrequency()>3600) {
             int remain = (getFrequency()-3600)/400;
-            amount += amount + (200*remain);
+            amount += (200*remain);
         }
 
         return amount;

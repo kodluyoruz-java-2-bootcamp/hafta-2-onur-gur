@@ -45,10 +45,10 @@ public class Motherboard extends  Hardware
     public double getPrice() {
         double amount = super.getPrice();
         if(isWifiIncluded()){
-            amount += amount+250;
+            amount += 250;
         }
         if(isBluetoothIncluded()){
-            amount += amount+100;
+            amount += 100;
         }
         return  amount;
     }
