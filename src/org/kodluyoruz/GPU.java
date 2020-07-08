@@ -37,7 +37,7 @@ public class GPU extends  Hardware
 
     @Override
     public double getPrice() {
-        double amount = getPrice();
+        double amount = super.getPrice();
 
         if (memory>8){
             int remain = (memory-8)/2;

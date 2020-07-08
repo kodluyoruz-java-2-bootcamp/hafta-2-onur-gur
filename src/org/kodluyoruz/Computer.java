@@ -28,6 +28,7 @@ public class Computer
     {
         // Bu metot bilgisayarın donanımlarına bakarak toplam fiyatını hesaplar.
         // TODO metodu doldurun
+
         double amount = motherboard.getPrice()+cpu.getPrice()+ram.getPrice()+ssd.getPrice()+gpu.getPrice();
         return amount;
     }
@@ -36,6 +37,7 @@ public class Computer
     {
         // Bu metot bilgisayarın donanımlarına bakarak toplamda ne kadar güç tüketeceğini hesaplar.
         // TODO metodu doldurun
+
         int power = motherboard.getPower()+cpu.getPower()+ram.getPower()+ssd.getPower()+gpu.getPower();
         return power;
     }
