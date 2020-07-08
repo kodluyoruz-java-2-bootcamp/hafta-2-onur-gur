@@ -10,8 +10,47 @@ package org.kodluyoruz;
  *
  * TODO Bu 2 özellik ve bunların metotları için gereken kodları bu sınıfın içine yazın
  */
-public class GPU
+public class GPU extends  Hardware
 {
+    private int memory;
+    private int bits;
+
+    public  GPU(){
+        super();
+    }
+
+    public int getMemory() {
+        return memory;
+    }
+
+    public void setMemory(int memory) {
+        this.memory = memory;
+    }
+
+    public int getBits() {
+        return bits;
+    }
+
+    public void setBits(int bits) {
+        this.bits = bits;
+    }
+
+    @Override
+    public double getPrice() {
+        double amount = getPrice();
+
+        if (memory>8){
+            int remain = (memory-8)/2;
+            amount = amount +(250*remain);
+        }
+
+        if(bits>128){
+            int remain = (bits-128)/64;
+            amount = amount +(400*remain);
+        }
+        return  amount;
+    }
+
 
     /*
      * Eğer ekran kartının hafızası 8 GB'tan fazlaysa, her 2 GB için fiyatı 250 TL artar.
